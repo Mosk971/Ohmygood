@@ -1,0 +1,45 @@
+
+.heading{
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: -1;
+
+    &__location{
+        display: flex;
+        justify-content: center;
+        background-color: #eaeaea;
+        padding:15px ;
+        position: relative;
+        z-index: -1;
+        font-weight: bold;
+        font-size: 1.2rem;
+        gap: 10px;        
+    }
+
+    &__explore{
+        display: flex;
+        flex-direction: column;
+        h1{ 
+            font-size: 1.5rem;          
+            margin: 40px 50px 0 50px;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+        p{    
+            font-weight: 300;            
+            margin: 10px 40px ; 
+            text-align: center;             
+        }  
+    }
+
+    &__btn{
+        @include headbtn;    
+    }
+
+    
+}
+         
+
+    
+
+  

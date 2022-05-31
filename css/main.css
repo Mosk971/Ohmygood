@@ -1,0 +1,163 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  box-shadow: 1px 1px 10px rgb(160, 160, 160);
+}
+
+.logo {
+  margin: 20px 0 10px 0;
+}
+.logo img {
+  max-width: 50%;
+  margin: auto;
+}
+
+.heading {
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: -1;
+}
+.heading__location {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 15px;
+  position: relative;
+  z-index: -1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  gap: 10px;
+}
+.heading__explore {
+  display: flex;
+  flex-direction: column;
+}
+.heading__explore h1 {
+  font-size: 1.5rem;
+  margin: 40px 50px 0 50px;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.heading__explore p {
+  font-weight: 300;
+  margin: 10px 40px;
+  text-align: center;
+}
+.heading__btn {
+  display: block;
+  width: 58%;
+  margin: 20px 75px 50px 75px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  padding: 15px 10px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 6px #949191;
+}
+
+.fonctionnement h1 {
+  margin: 35px 0 20px 15px;
+}
+.fonctionnement__list {
+  list-style: none;
+}
+
+.btn {
+  display: block;
+  width: 58%;
+  margin: 20px 75px 50px 75px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  padding: 15px 10px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 6px #949191;
+}
+
+.fonc__btn {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 20px 50px;
+  margin: 20px 20px;
+  box-shadow: 2px 2px 11px #c0bcbc;
+}
+
+.fonc__btn::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.choice::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f3cd";
+}
+
+.compose::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0ca";
+}
+
+.eat::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f54e";
+}/*# sourceMappingURL=main.css.map */

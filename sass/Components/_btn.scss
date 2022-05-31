@@ -1,0 +1,39 @@
+.btn{
+        display: block;
+        width: 58%;
+        margin: 20px 75px 50px 75px;
+        font-weight: bold;
+        color: #ffff;        
+        background: linear-gradient(to left top, $primary, $secondary);
+        padding:15px 10px;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 2px 2px 6px  $heading-grey; 
+}
+.fonc__btn{
+    display: flex;
+    background-color:#f6f6f6;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 20px 50px; 
+    margin: 20px 20px;
+    box-shadow: 2px 2px 11px $light-grey;    
+}
+    .fonc__btn::before{   
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+    .choice::before{
+        font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f3cd";
+    }
+    .compose::before{
+        font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f0ca";
+    }
+    .eat::before{
+        font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f54e";
+    }
