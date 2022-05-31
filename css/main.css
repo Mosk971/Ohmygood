@@ -45,6 +45,7 @@ select {
 
 a, a:visited, a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -104,8 +105,12 @@ header {
   box-shadow: 2px 2px 6px #949191;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
 .fonctionnement h1 {
-  margin: 35px 0 20px 15px;
+  margin: 35px 0 0 20px;
 }
 .fonctionnement__list {
   list-style: none;
@@ -126,38 +131,54 @@ header {
 
 .fonc__btn {
   display: flex;
+  justify-content: center;
+  position: relative;
   background-color: #f6f6f6;
   border-radius: 20px;
   text-align: center;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 20px 50px;
-  margin: 20px 20px;
-  box-shadow: 2px 2px 11px #c0bcbc;
+  margin: 20px auto;
+  box-shadow: 2px 0 11px #c0bcbc;
+  max-width: 500px;
+  width: 80%;
+}
+.fonc__btn:hover {
+  background-color: #f2eafb;
 }
 
 .fonc__btn::before {
+  position: absolute;
   display: inline-block;
+  left: 10%;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
 
+.fonc__btn:hover::before {
+  color: #9356DC;
+}
+
 .choice::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f3cd";
+  color: #7c7c7c;
 }
 
 .compose::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f0ca";
+  color: #7c7c7c;
 }
 
 .eat::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f54e";
+  color: #7c7c7c;
 }/*# sourceMappingURL=main.css.map */
