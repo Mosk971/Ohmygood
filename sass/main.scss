@@ -1,7 +1,9 @@
-@import "Base/reset";
-@import "Utils/variables";
+@import "base/reset";
+@import "utils/variables";
+@import "components/btn";
 @import "utils/mixin";
-@import "Layout/header";
+@import "layout/header";
 @import "layout/heading";
 @import "layout/fonctionnement";
-@import "components/btn"
+@import "layout/restaurants";
+

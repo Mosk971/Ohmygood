@@ -1,4 +1,4 @@
-.btn{
+.headbtn{
     display: block;
     width: 58%;
     margin: 20px 75px 50px 75px;
@@ -13,46 +13,23 @@
 .fonc__btn{
     display: flex;
     justify-content: center;
+    color: inherit;        
     position: relative;
-    background-color:#f6f6f6;
-    border-radius: 20px;
-    text-align: center;
+    background-color:$back-grey;
+    border-radius: 25px;    
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 20px 50px; 
+    padding: 25px 50px; 
     margin: 20px auto;
     box-shadow: 2px 0 11px $light-grey;
-    max-width: 500px;
-    width: 80%; 
+    max-width: 320px;
+    width: 85%;    
         &:hover{
         background-color: lighten($color: $primary, $amount: 35%) ; 
-        }  
-}
-.fonc__btn::before{                
-    position: absolute;  
-    display: inline-block; 
-    left:10%;       
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-.fonc__btn:hover::before{
-    color: $primary;
-}
-
-.choice::before{
-    font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f3cd";
-    color: $fonc-icon;        
-}
-
-.compose::before{
-    font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f0ca";
-    color: $fonc-icon;
-}
-.eat::before{
-    font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f54e";
-    color: $fonc-icon;
+        } 
+        &:hover .choice, .compose .eat{
+            color: $primary;
+        }         
 }
 
 

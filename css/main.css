@@ -45,7 +45,41 @@ select {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+.headbtn {
+  display: block;
+  width: 58%;
+  margin: 20px 75px 50px 75px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  padding: 15px 10px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 6px #949191;
+}
+
+.fonc__btn {
+  display: flex;
+  justify-content: center;
   color: inherit;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 25px 50px;
+  margin: 20px auto;
+  box-shadow: 2px 0 11px #c0bcbc;
+  max-width: 320px;
+  width: 85%;
+}
+.fonc__btn:hover {
+  background-color: #f2eafb;
+}
+.fonc__btn:hover .choice, .fonc__btn:hover .eat, .fonc__btn:hover .compose, .fonc__btn .compose .eat {
+  color: #9356DC;
 }
 
 header {
@@ -95,7 +129,10 @@ header {
 .heading__btn {
   display: block;
   width: 58%;
-  margin: 20px 75px 50px 75px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   color: white;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
@@ -103,82 +140,59 @@ header {
   border-radius: 30px;
   text-align: center;
   box-shadow: 2px 2px 6px #949191;
+  max-width: 250px;
 }
 
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
-.fonctionnement h1 {
+.fonctionnement h2 {
   margin: 35px 0 0 20px;
 }
-.fonctionnement__list {
-  list-style: none;
-}
 
-.btn {
-  display: block;
-  width: 58%;
-  margin: 20px 75px 50px 75px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  padding: 15px 10px;
-  border-radius: 30px;
-  text-align: center;
-  box-shadow: 2px 2px 6px #949191;
-}
-
-.fonc__btn {
+.number::before {
+  font-family: "roboto";
+  font-size: 13px;
+  position: absolute;
   display: flex;
   justify-content: center;
-  position: relative;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding: 20px 50px;
-  margin: 20px auto;
-  box-shadow: 2px 0 11px #c0bcbc;
-  max-width: 500px;
-  width: 80%;
-}
-.fonc__btn:hover {
-  background-color: #f2eafb;
+  align-items: center;
+  top: 35%;
+  left: -3%;
+  color: white !important;
+  background-color: #9356DC;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
-.fonc__btn::before {
+.one::before {
+  content: "1";
+}
+
+.two::before {
+  content: "2";
+}
+
+.three::before {
+  content: "3";
+}
+
+.choice, .eat, .compose {
   position: absolute;
-  display: inline-block;
-  left: 10%;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.fonc__btn:hover::before {
-  color: #9356DC;
-}
-
-.choice::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f3cd";
+  left: 30px;
+  top: 37%;
+  font-size: 1.2rem;
   color: #7c7c7c;
 }
 
-.compose::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f0ca";
-  color: #7c7c7c;
+.restaurants {
+  background-color: #f6f6f6;
 }
-
-.eat::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f54e";
-  color: #7c7c7c;
+.restaurants h2 {
+  margin-left: 20px;
+  padding-top: 40px;
 }/*# sourceMappingURL=main.css.map */

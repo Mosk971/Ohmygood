@@ -1,11 +1,47 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    h1{
+    padding-bottom: 40px;;
+    h2{
         margin: 35px 0 0 20px;
-    }
-    &__list{        
-        list-style: none; 
-    }
-    
+    }    
+}   
+.number::before{
+    font-family:"roboto";
+    font-size: 13px;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:35%;
+    left: -3%;
+    color:white !important;
+    background-color:$primary;
+    width:15px;
+    height:15px;
+    padding: 10px;
+    border-radius:50%;  
+}
+.one::before{    
+    content:"1";
+}   
+
+.two::before{
+    content:"2";
+}
+.three::before{
+    content:"3";
+}
+ .choice{
+    position: absolute;
+    left: 30px;
+    top: 37%;
+    font-size: 1.2rem;
+    color: $fonc-icon;       
+}
+.compose{
+    @extend .choice;
+}
+.eat{
+    @extend .choice;
 }
