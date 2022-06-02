@@ -11,5 +11,9 @@
 .cards{
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
     
+    .boulette{
+        object-position: 60% 50%;        
+    }
 }

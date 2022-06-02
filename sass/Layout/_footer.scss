@@ -1,0 +1,41 @@
+.ftr{
+    background-color: $dark;
+    color: $font-color1; 
+    
+    & a{
+        color: inherit;
+        font-weight: 400;
+        font-size: 0.9rem;
+
+    }
+    
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 20px 20px ;
+    }
+    &__title{
+        font-family: $font-secondary ;        
+        font-size: 1.1rem;
+        margin-bottom: 10px;                
+    }
+    &__propose::before{         
+        font: var(--fa-font-solid);
+        content: "\f2e7"; 
+        margin-right: 10px;
+    }
+    &__partner::before{
+        font: var(--fa-font-solid);
+        content: "\f4c4";
+        font-size: 10px;
+        margin-right: 5px;
+    }   
+    
+}
+
+.icon::before {    
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    
+  }
