@@ -12,3 +12,9 @@ $font-primary:'Roboto', sans-serif;
 $font-secondary:'Shrikhand', cursive;
 $font-color1: #fff;
 $font-color2: black;
+
+
+$breakpoints: (
+    tablet: 768px,
+    pc: 992px,
+);

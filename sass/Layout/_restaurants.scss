@@ -5,6 +5,11 @@
         margin-left:20px;
         margin-bottom: 20px;
         padding-top: 40px;
+        @include tablet{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 60px;
+        }
 
     }
 }
@@ -12,6 +17,15 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    @include tablet{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        
+        
+        
+    }
     
     .boulette{
         object-position: 60% 50%;        

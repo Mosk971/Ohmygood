@@ -4,7 +4,11 @@
     padding-bottom: 40px;;
     h2{
         margin: 35px 0 0 20px;
-    }    
+        @include tablet{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }       
 }   
 .number::before{
     font-family:"roboto";
@@ -37,7 +41,10 @@
     left: 30px;
     top: 37%;
     font-size: 1.2rem;
-    color: $fonc-icon;       
+    color: $fonc-icon;
+    @include tablet{        
+        color: $primary;
+    }       
 }
 .compose{
     @extend .choice;
