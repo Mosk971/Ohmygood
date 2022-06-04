@@ -340,8 +340,8 @@ header {
   transition: 1s;
   z-index: 2;
 }
-.fa-heart:focus {
-  color: pink;
+.fa-heart:hover {
+  background: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.4766281513) 17%, rgba(53, 53, 53, 0.6923144258) 42%, rgba(53, 53, 53, 0.7175245098) 65%, rgba(53, 53, 53, 0.4234068627) 86%, rgba(53, 53, 53, 0) 100%);
 }
 
 .ftr {
