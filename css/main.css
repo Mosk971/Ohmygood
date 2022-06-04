@@ -29,6 +29,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  max-width: 1400px;
+  margin: auto;
 }
 
 img {
@@ -81,7 +83,7 @@ a, a:visited, a:active {
 .fonc__btn:hover .choice, .fonc__btn:hover .eat, .fonc__btn:hover .compose, .fonc__btn .compose .eat {
   color: #9356DC;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .fonc__btn {
     max-width: 100%;
     width: 100%;
@@ -94,6 +96,11 @@ a, a:visited, a:active {
 header {
   display: flex;
   box-shadow: 1px 1px 10px rgb(160, 160, 160);
+}
+@media screen and (min-width: 768px) {
+  header {
+    box-shadow: none;
+  }
 }
 
 .logo {
@@ -109,6 +116,11 @@ header {
   position: relative;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, rgb(246, 246, 246) 50%, rgba(246, 246, 246, 0) 100%);
+  }
+}
 .heading__location {
   display: flex;
   justify-content: center;
@@ -119,6 +131,12 @@ header {
   font-weight: 400;
   font-size: 1.2rem;
   gap: 10px;
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .heading__location {
+    background: rgb(246, 246, 246);
+    background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, rgb(232, 232, 232) 50%, rgba(246, 246, 246, 0) 100%);
+  }
 }
 .heading__explore {
   display: flex;
@@ -160,7 +178,7 @@ header {
 .fonctionnement h2 {
   margin: 35px 0 0 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .fonctionnement h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -203,21 +221,32 @@ header {
   font-size: 1.2rem;
   color: #7c7c7c;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .choice, .eat, .compose {
     color: #9356DC;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .one::before, .two::before, .three::before {
+    display: none;
   }
 }
 
 .restaurants {
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 768px) {
+  .restaurants {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6755077031) 0%, rgb(246, 246, 246) 47%, rgba(255, 255, 255, 0.6671043417) 100%);
+  }
+}
 .restaurants h2 {
   margin-left: 20px;
   margin-bottom: 20px;
   padding-top: 40px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurants h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -230,7 +259,7 @@ header {
   flex-direction: column;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -258,10 +287,10 @@ header {
   position: relative;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .card {
-    max-width: 100%;
     width: 30%;
+    max-width: 355px;
     min-width: 29%;
     margin-left: 50px;
     margin-right: 50px;
@@ -275,7 +304,7 @@ header {
   -o-object-position: 0 -70px;
      object-position: 0 -70px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .card__img img {
     height: 150px;
     -o-object-position: 0;
@@ -319,6 +348,11 @@ header {
   background-color: #353535;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .ftr {
+    background: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.4766281513) 17%, rgba(53, 53, 53, 0.6923144258) 42%, rgba(53, 53, 53, 0.7175245098) 65%, rgba(53, 53, 53, 0.4234068627) 86%, rgba(53, 53, 53, 0) 100%);
+  }
+}
 .ftr a {
   color: inherit;
   font-weight: 400;
@@ -328,6 +362,13 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px 0 20px 20px;
+}
+@media screen and (min-width: 768px) {
+  .ftr__wrap {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 90px 0 90px;
+  }
 }
 .ftr__title {
   font-family: "Shrikhand", cursive;

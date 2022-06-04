@@ -23,7 +23,7 @@
     margin: 20px auto;
     box-shadow: 2px 0 11px $light-grey;
     max-width: 320px;
-    width: 85%;    
+    width: 85%;        
     &:hover{
     background-color: lighten($color: $primary, $amount: 35%) ; 
     } 

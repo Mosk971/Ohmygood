@@ -52,3 +52,8 @@
 .eat{
     @extend .choice;
 }
+.one::before, .two::before, .three::before{
+    @include tablet{
+        display: none;
+    }
+}

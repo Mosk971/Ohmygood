@@ -18,7 +18,15 @@
 }
 
 @mixin tablet {
-        @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, pc)){
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
              @content;   
         }
+}
+
+@mixin gradientlg{
+        background: linear-gradient(90deg, rgba(255,255,255,0.6755077030812324) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,0.6671043417366946) 100%);
+    };
+
+@mixin gradientftr{
+background: linear-gradient(90deg, rgba(53,53,53,0) 0%, rgba(53,53,53,0.4766281512605042) 17%, rgba(53,53,53,0.6923144257703081) 42%, rgba(53,53,53,0.7175245098039216) 65%, rgba(53,53,53,0.4234068627450981) 86%, rgba(53,53,53,0) 100%);
 }

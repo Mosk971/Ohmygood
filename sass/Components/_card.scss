@@ -14,13 +14,13 @@
     position: relative;
     margin-bottom: 25px;
 
-    @include tablet{
-        max-width: 100%;
+    @include tablet{        
         width: 30%;
+        max-width: 355px;
         min-width: 29%; 
         margin-left: 50px;
-        margin-right: 50px;       
-    }
+        margin-right: 50px;              
+    }    
     
 
     &__img img{
@@ -30,10 +30,8 @@
         object-position: 0 -70px;
         @include tablet{            
             height: 150px;
-            object-position: 0;                 
-                       
-            
-        }       
+            object-position: 0;          
+        }
     }
     &__titre{
         font-weight: bold;

@@ -1,6 +1,9 @@
 .ftr{
     background-color: $dark;
-    color: $font-color1; 
+    color: $font-color1;
+    @include tablet{
+        @include gradientftr;       
+    } 
     
     & a{
         color: inherit;
@@ -13,17 +16,27 @@
         display: flex;
         flex-direction: column;
         padding: 20px 0 20px 20px ;
+        @include tablet{
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px 90px 0 90px;
+            
+            
+        }
     }
+    
     &__title{
         font-family: $font-secondary ;        
         font-size: 1.1rem;
         margin-bottom: 10px;                
     }
+
     &__propose::before{         
         font: var(--fa-font-solid);
         content: "\f2e7"; 
         margin-right: 10px;
     }
+
     &__partner::before{
         font: var(--fa-font-solid);
         content: "\f4c4";
