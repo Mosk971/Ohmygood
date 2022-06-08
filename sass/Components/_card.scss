@@ -58,14 +58,26 @@
     right:10%;
     bottom: 10%;
     font-size: 1.5rem;
-    color: $dark-grey;
-    transition: 1s;
-    z-index: 2;
-
-    &:hover{
-       background: linear-gradient(90deg, rgba(53,53,53,0) 0%, rgba(53,53,53,0.4766281512605042) 17%, rgba(53,53,53,0.6923144257703081) 42%, rgba(53,53,53,0.7175245098039216) 65%, rgba(53,53,53,0.4234068627450981) 86%, rgba(53,53,53,0) 100%);       
-    }
-    
-    
+    color: $dark-grey;              
 }
 
+
+.favorites-heart_filled {
+    opacity: 0;
+    background: linear-gradient(to left top, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include tablet{
+        &:hover{
+          opacity: 1;    
+          transition: 0.5s;          
+        }
+    }
+    &:active{
+        opacity: 1;    
+        transition: 0.5s;      
+        }  
+}
+   
+  

@@ -26,19 +26,19 @@
     width: 85%;        
     &:hover{
     background-color: lighten($color: $primary, $amount: 35%) ; 
+    box-shadow: 2px 0 11px 3px $light-grey;
     } 
     &:hover .choice, .compose .eat{
         color: $primary;
     }
     
-    @include tablet{
-        max-width: 100%;
-        width: 100%;
+    @include tablet{                
+        max-width: 50%;
+        width: 30%;
         border-radius: 8px;
-        box-shadow: 1px;
-        margin: 0 10px 10px 0;
-   }
-           
+        box-shadow: 5px;
+        margin: auto;
+   }           
                 
 }
 
