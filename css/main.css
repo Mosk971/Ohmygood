@@ -47,6 +47,7 @@ select {
 
 a, a:visited, a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 .headbtn {
@@ -77,10 +78,6 @@ a, a:visited, a:active {
   max-width: 320px;
   width: 85%;
 }
-.fonc__btn:hover {
-  background-color: #f2eafb;
-  box-shadow: 2px 0 11px 3px #c0bcbc;
-}
 .fonc__btn:hover .choice, .fonc__btn:hover .eat, .fonc__btn:hover .compose, .fonc__btn .compose .eat {
   color: #9356DC;
 }
@@ -93,15 +90,40 @@ a, a:visited, a:active {
     margin: auto;
   }
 }
+.fonc__btn.fonc__btn--style:hover {
+  background-color: #f2eafb;
+  box-shadow: 2px 0 11px 3px #c0bcbc;
+}
 
-header {
+.plat {
+  background-color: #fff;
+  width: 90%;
+  max-width: 100%;
+  padding: 10px;
+  display: block;
+  border-radius: 15px;
+  line-height: 1.3rem;
+}
+.plat__principal {
+  font-size: 1.1rem;
+}
+.plat__condiment {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.top__bar {
   display: flex;
-  box-shadow: 1px 1px 10px rgb(160, 160, 160);
+  position: relative;
 }
 @media screen and (min-width: 768px) {
-  header {
+  .top__bar {
     box-shadow: none;
   }
+}
+
+.top_bar--shadow {
+  box-shadow: 1px 1px 10px rgb(160, 160, 160);
 }
 
 .logo {
@@ -110,6 +132,17 @@ header {
 .logo img {
   max-width: 50%;
   margin: auto;
+}
+
+.return__btn {
+  position: absolute;
+  left: 9%;
+  top: 35%;
+  height: 15px;
+  width: 15px;
+}
+.return__btn .fa-arrow-left {
+  font-size: 1.3rem;
 }
 
 .heading {
@@ -412,4 +445,41 @@ header {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+
+.menu__content {
+  position: relative;
+  z-index: 2;
+  border-radius: 15px 15px 0 0;
+  background-color: #f6f6f6;
+}
+.menu__content h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.4rem;
+  padding: 20px;
+}
+.menu__content h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
+.menu__img {
+  position: relative;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 450px;
+}
+.menu__desserts {
+  margin-bottom: 50px;
+}
+
+.condiment__prix {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.prix {
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+
+.menu{          
+    
+    &__content{
+        position: relative;
+        z-index: 2;
+        border-radius: 15px 15px 0 0;
+        background-color: $back-grey;
+
+        h2{
+            font-family: $font-secondary;
+            font-size: 1.4rem;
+            padding: 20px;
+        }
+        h3{
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-left: 20px;
+            
+        }
+    }    
+
+    &__img{
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+        height: 450px;
+        }    
+        
+    &__desserts{ 
+        margin-bottom: 50px;
+    }    
+    
+}
+
+.condiment__prix{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.prix{
+    font-size: 1rem;
+}
