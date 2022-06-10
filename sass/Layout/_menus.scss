@@ -1,6 +1,6 @@
 
 .menu{          
-    
+     background-color: $back-grey;
     &__content{
         position: relative;
         z-index: 2;
@@ -30,7 +30,13 @@
     &__desserts{ 
         margin-bottom: 50px;
     }    
-    
+    &__turq__bar{
+        display: block;
+      width: 40px;
+      height: 3px;
+      margin-left: 20px;
+      background-color: $terciary;  
+    }
 }
 
 .condiment__prix{
@@ -40,4 +46,7 @@
 }
 .prix{
     font-size: 1rem;
+}
+.commander {
+    background-color: $back-grey;
 }

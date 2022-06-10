@@ -447,6 +447,9 @@ a, a:visited, a:active {
   -webkit-font-smoothing: antialiased;
 }
 
+.menu {
+  background-color: #f6f6f6;
+}
 .menu__content {
   position: relative;
   z-index: 2;
@@ -473,6 +476,13 @@ a, a:visited, a:active {
 .menu__desserts {
   margin-bottom: 50px;
 }
+.menu__turq__bar {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-left: 20px;
+  background-color: #99E2D0;
+}
 
 .condiment__prix {
   display: flex;
@@ -482,4 +492,8 @@ a, a:visited, a:active {
 
 .prix {
   font-size: 1rem;
+}
+
+.commander {
+  background-color: #f6f6f6;
 }/*# sourceMappingURL=main.css.map */
