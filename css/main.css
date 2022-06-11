@@ -87,7 +87,7 @@ a, a:visited, a:active {
     width: 30%;
     border-radius: 8px;
     box-shadow: 5px;
-    margin: auto;
+    margin: 20px auto;
   }
 }
 .fonc__btn.fonc__btn--style:hover {
@@ -98,7 +98,7 @@ a, a:visited, a:active {
 .plat {
   background-color: #fff;
   width: 90%;
-  max-width: 100%;
+  max-width: 430px;
   padding: 10px;
   display: block;
   border-radius: 15px;
@@ -461,11 +461,20 @@ a, a:visited, a:active {
   font-family: "Shrikhand", cursive;
   font-size: 1.4rem;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__content h3 {
   font-size: 1.1rem;
   font-weight: 300;
   margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu__content h3 {
+    text-align: center;
+    color: #99E2D0;
+    font-weight: 400;
+  }
 }
 .menu__img {
   -o-object-fit: cover;
@@ -483,6 +492,11 @@ a, a:visited, a:active {
   margin-left: 20px;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 768px) {
+  .menu__turq__bar {
+    display: none;
+  }
+}
 
 .condiment__prix {
   display: flex;
@@ -497,6 +511,11 @@ a, a:visited, a:active {
 .commander {
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .commander {
+    max-width: 300px;
+  }
+}
 
 .icon::after {
   display: inline-block;
@@ -504,8 +523,26 @@ a, a:visited, a:active {
   -webkit-font-smoothing: antialiased;
 }
 
-.menu--heart::after {
-  margin-left: 150px;
+.fav-heart::after {
   font: var(--fa-font-regular);
   content: "\f004";
+}
+
+.fav-heart--filled::after {
+  font: var(--fa-font-solid);
+  content: "\f004";
+  z-index: 2;
+  opacity: 0;
+  background: linear-gradient(to left top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fav-heart--filled::after:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.title_container {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

@@ -12,12 +12,21 @@
             font-family: $font-secondary;
             font-size: 1.4rem;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            @include tablet{
+                // text-align: center;
+            }
         }
         h3{
             font-size: 1.1rem;
             font-weight: 300;
             margin-left: 20px;
-            
+            @include tablet{
+                text-align: center;
+                color: $terciary;
+                font-weight: 400;
+            }
         }
     }    
 
@@ -35,7 +44,10 @@
       width: 40px;
       height: 3px;
       margin-left: 20px;
-      background-color: $terciary;  
+      background-color: $terciary;
+      @include tablet{
+        display: none;
+    }  
     }
 }
 
@@ -48,7 +60,10 @@
     font-size: 1rem;
 }
 .commander{
-    margin: auto;    
+    margin: auto;
+    @include tablet{
+        max-width: 300px;
+    }    
 }
 .icon::after {
     display: inline-block;
@@ -56,8 +71,32 @@
     -webkit-font-smoothing: antialiased;
   
 }
-.menu--heart::after { 
-    margin-left: 150px;  
+
+.fav-heart::after{
     font: var(--fa-font-regular);
     content: "\f004";
-  }
+}
+ .fav-heart--filled::after {     
+    font: var(--fa-font-solid);
+     content: "\f004";
+     z-index: 2;
+     opacity: 0;
+     background: linear-gradient(to left top, #9356dc, #ff79da);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+     &:hover{
+        opacity: 1;  
+        transition: 0.5s;
+    } 
+
+   }
+
+
+
+.title_container{
+    display: flex;    
+    justify-content: space-between;
+}  
+
+
+
