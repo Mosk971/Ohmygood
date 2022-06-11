@@ -1,12 +1,13 @@
 .top__bar{
     display: flex;
     position: relative;    
-    @include tablet{
-        box-shadow: none;
-    }
+    
 } 
 .top_bar--shadow{
     box-shadow: 1px 1px 10px  rgb(160, 160, 160);
+    @include tablet{
+        box-shadow: none;
+    }
 }
  
 
@@ -28,5 +29,8 @@
     
      .fa-arrow-left{
         font-size: 1.3rem; 
+        @include tablet{
+            display: none;
+        }
      }        
 }

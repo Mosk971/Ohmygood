@@ -20,7 +20,7 @@
 .cards{
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 
     @include tablet{
         flex-direction: row;

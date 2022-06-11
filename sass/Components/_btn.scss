@@ -1,7 +1,8 @@
 .headbtn{
     display: block;
     width: 58%;
-    margin: 20px 75px 50px 75px;
+    margin: 20px auto;
+    max-width: 240px;
     font-weight: bold;
     color: $font-color1 !important;        
     background: linear-gradient(to left top, $primary, $secondary);
@@ -56,8 +57,7 @@
     &__condiment{ 
         font-weight: 300;       
         font-size: 0.9rem;
-    }   
-
+    }    
 }
 
 

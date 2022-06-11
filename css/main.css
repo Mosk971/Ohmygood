@@ -53,7 +53,8 @@ a, a:visited, a:active {
 .headbtn {
   display: block;
   width: 58%;
-  margin: 20px 75px 50px 75px;
+  margin: 20px auto;
+  max-width: 240px;
   font-weight: bold;
   color: #fff !important;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
@@ -116,14 +117,14 @@ a, a:visited, a:active {
   display: flex;
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .top__bar {
-    box-shadow: none;
-  }
-}
 
 .top_bar--shadow {
   box-shadow: 1px 1px 10px rgb(160, 160, 160);
+}
+@media screen and (min-width: 768px) {
+  .top_bar--shadow {
+    box-shadow: none;
+  }
 }
 
 .logo {
@@ -143,6 +144,11 @@ a, a:visited, a:active {
 }
 .return__btn .fa-arrow-left {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .return__btn .fa-arrow-left {
+    display: none;
+  }
 }
 
 .heading {
@@ -298,7 +304,7 @@ a, a:visited, a:active {
 .cards {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 768px) {
   .cards {
@@ -449,13 +455,13 @@ a, a:visited, a:active {
 
 .menu {
   background-color: #f6f6f6;
-  padding-bottom: 50px;
 }
 .menu__content {
   position: relative;
   z-index: 2;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .menu__content h2 {
   font-family: "Shrikhand", cursive;
@@ -463,6 +469,11 @@ a, a:visited, a:active {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .menu__content h2 {
+    text-align: center;
+  }
 }
 .menu__content h3 {
   font-size: 1.1rem;
@@ -478,7 +489,7 @@ a, a:visited, a:active {
 }
 .menu__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 250px;
   width: 100%;
 }
@@ -521,25 +532,6 @@ a, a:visited, a:active {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-}
-
-.fav-heart::after {
-  font: var(--fa-font-regular);
-  content: "\f004";
-}
-
-.fav-heart--filled::after {
-  font: var(--fa-font-solid);
-  content: "\f004";
-  z-index: 2;
-  opacity: 0;
-  background: linear-gradient(to left top, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.fav-heart--filled::after:hover {
-  opacity: 1;
-  transition: 0.5s;
 }
 
 .title_container {
