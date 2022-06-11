@@ -1,6 +1,7 @@
 
 .menu{          
      background-color: $back-grey;
+     padding-bottom: 50px;
     &__content{
         position: relative;
         z-index: 2;
@@ -20,11 +21,10 @@
         }
     }    
 
-    &__img{
-        position: relative;
-        z-index: -1;
+    &__img{     
         object-fit: cover;
-        height: 450px;
+        height: 250px;
+        width: 100%;
         }    
         
     &__desserts{ 
@@ -47,6 +47,17 @@
 .prix{
     font-size: 1rem;
 }
-.commander {
-    background-color: $back-grey;
+.commander{
+    margin: auto;    
 }
+.icon::after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  
+}
+.menu--heart::after { 
+    margin-left: 150px;  
+    font: var(--fa-font-regular);
+    content: "\f004";
+  }
