@@ -19,6 +19,7 @@
             @include tablet{
                  text-align: center;
             }
+            
         }
         h3{
             font-size: 1.1rem;
@@ -71,14 +72,10 @@
 .icon::after {
     display: inline-block;
     text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  
+    -webkit-font-smoothing: antialiased;  
 }
 
-.title_container{
-    display: flex;    
-    justify-content: space-between;
-}  
+ 
 
 
 

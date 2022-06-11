@@ -532,9 +532,4 @@ a, a:visited, a:active {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-}
-
-.title_container {
-  display: flex;
-  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
