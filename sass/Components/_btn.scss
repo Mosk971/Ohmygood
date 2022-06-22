@@ -9,7 +9,9 @@
     padding:15px 10px;
     border-radius: 30px;
     text-align: center;
-    box-shadow: 2px 2px 6px  $heading-grey; 
+    box-shadow: 2px 2px 6px  $heading-grey;
+    z-index: 4;
+
 }
 .fonc__btn{
     display: flex;
@@ -24,7 +26,8 @@
     margin: 20px auto;
     box-shadow: 2px 0 11px $light-grey;
     max-width: 320px;
-    width: 85%;        
+    width: 85%; 
+              
     
     &:hover .choice, .compose .eat{
         color: $primary;
@@ -40,26 +43,7 @@
    &.fonc__btn--style:hover{
     background-color: lighten($color: $primary, $amount: 35%) ; 
     box-shadow: 2px 0 11px 3px $light-grey;         
-}             
+    }             
 }
-
-.plat{
-    background-color: $font-color1;
-    width: 90%;
-    max-width: 430px;
-    padding: 10px;
-    display: block;
-    border-radius: 15px; 
-    line-height: 1.3rem;
-    &__principal{        
-        font-size: 1.1rem;        
-    }
-    &__condiment{ 
-        font-weight: 300;       
-        font-size: 0.9rem;
-    }    
-}
-
-
 
 

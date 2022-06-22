@@ -62,6 +62,7 @@ a, a:visited, a:active {
   border-radius: 30px;
   text-align: center;
   box-shadow: 2px 2px 6px #949191;
+  z-index: 4;
 }
 
 .fonc__btn {
@@ -93,23 +94,6 @@ a, a:visited, a:active {
 .fonc__btn.fonc__btn--style:hover {
   background-color: #f2eafb;
   box-shadow: 2px 0 11px 3px #c0bcbc;
-}
-
-.plat {
-  background-color: #fff;
-  width: 90%;
-  max-width: 430px;
-  padding: 10px;
-  display: block;
-  border-radius: 15px;
-  line-height: 1.3rem;
-}
-.plat__principal {
-  font-size: 1.1rem;
-}
-.plat__condiment {
-  font-weight: 300;
-  font-size: 0.9rem;
 }
 
 .top__bar {
@@ -219,6 +203,7 @@ a, a:visited, a:active {
     display: flex;
     text-align: center;
     font-size: 0.8rem;
+    position: relative;
   }
 }
 .fonctionnement h2 {
@@ -452,17 +437,22 @@ a, a:visited, a:active {
   -webkit-font-smoothing: antialiased;
 }
 
-.menu {
+.full_content {
   background-color: #f6f6f6;
-}
-.menu__content {
-  position: relative;
-  z-index: 2;
-  border-radius: 20px 20px 0 0;
-  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
 }
-.menu__content h2 {
+
+.head_icon {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.title {
   font-family: "Shrikhand", cursive;
   font-size: 1.4rem;
   padding: 20px;
@@ -470,17 +460,23 @@ a, a:visited, a:active {
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .menu__content h2 {
+  .title {
     text-align: center;
   }
 }
-.menu__content h3 {
+
+.favorites-heart {
+  display: block;
+  top: 25px;
+}
+
+.menu h3 {
   font-size: 1.1rem;
   font-weight: 300;
   margin-left: 20px;
 }
 @media screen and (min-width: 768px) {
-  .menu__content h3 {
+  .menu h3 {
     text-align: center;
     color: #99E2D0;
     font-weight: 400;
@@ -489,8 +485,14 @@ a, a:visited, a:active {
 .menu__img {
   -o-object-fit: cover;
   object-fit: cover;
-  height: 250px;
+  max-width: 100%;
   width: 100%;
+  max-height: 450px;
+}
+@media screen and (min-width: 768px) {
+  .menu__img {
+    border-radius: 15px 15px 0 0;
+  }
 }
 .menu__desserts {
   margin-bottom: 50px;
@@ -509,12 +511,17 @@ a, a:visited, a:active {
 }
 
 .condiment__prix {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .prix {
+  display: inline-block;
   font-size: 1rem;
 }
 
@@ -531,4 +538,60 @@ a, a:visited, a:active {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+
+.plat {
+  background-color: #fff;
+  width: 90%;
+  max-width: 430px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  line-height: 1.3rem;
+  overflow: hidden;
+}
+.plat__principal {
+  font-size: 1.1rem;
+}
+.plat__condiment {
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.check-box {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #99E2D0;
+  transition-duration: 0.5s;
+  transform: translateX(100%);
+}
+
+.wrap_plat {
+  width: 100%;
+}
+.wrap_plat:hover + .check-box {
+  transform: translateX(0%);
+}
+
+.fa-circle-check {
+  margin: auto;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.note {
+  max-height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .note {
+    max-height: 400px;
+  }
 }/*# sourceMappingURL=main.css.map */

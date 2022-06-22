@@ -1,67 +1,87 @@
+.full_content{
+    background-color: $back-grey;
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    margin-top:-20px;         
+ }
 
-.menu{          
-     background-color: $back-grey;
-     
-    &__content{
-        position: relative;
-        z-index: 2;
-        border-radius: 20px 20px 0 0;
-        background-color: $back-grey;
-        padding-bottom: 50px;
-           
-
-        h2{
-            font-family: $font-secondary;
-            font-size: 1.4rem;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            @include tablet{
-                 text-align: center;
-            }
-            
+.head_icon{
+   display: flex;
+   justify-content: space-between;   
+   position: relative;
+}
+.title{
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+        @include tablet{
+            text-align: center;
         }
-        h3{
-            font-size: 1.1rem;
-            font-weight: 300;
-            margin-left: 20px;
-            @include tablet{
-                text-align: center;
-                color: $terciary;
-                font-weight: 400;
-            }
+}
+.favorites-heart{
+    display: block;
+    top: 25px;
+}    
+.menu{       
+        
+    h3{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-left: 20px;
+        @include tablet{
+            text-align: center;
+            color: $terciary;
+            font-weight: 400;
         }
     }    
+        
 
     &__img{
         -o-object-fit: cover;     
-        object-fit: cover;
-        height: 250px;
-        width: 100%;
-        }    
+        object-fit: cover;        
+        max-width: 100%;
+        width: 100%;        
+        max-height: 450px;
+        @include tablet{
+            border-radius: 15px 15px 0 0;
+        }        
+    }    
         
     &__desserts{ 
         margin-bottom: 50px;
-    }    
+    } 
+
     &__turq__bar{
         display: block;
       width: 40px;
       height: 3px;
       margin-left: 20px;
       background-color: $terciary;
-      @include tablet{
-        display: none;
-    }  
+        @include tablet{
+            display: none;
+        }  
     }
+
 }
 
 .condiment__prix{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;   
     padding-right: 10px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
 }
+
 .prix{
+    display: inline-block;
     font-size: 1rem;
+    
 }
 .commander{
     margin: auto;
@@ -75,7 +95,60 @@
     -webkit-font-smoothing: antialiased;  
 }
 
- 
+.plat{
+    background-color: $font-color1;
+    width: 90%;
+    max-width: 430px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px; 
+    line-height: 1.3rem;
+    overflow: hidden;    
+
+    &__principal{        
+        font-size: 1.1rem;        
+    }
+
+    &__condiment{ 
+        font-weight: 300;       
+        font-size: 0.9rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }  
+     
+}
 
 
+.check-box{
+position: absolute;
+display: flex;
+right: 0;
+top: 0;
+height: 100%;
+width: 20%;
+background-color: $terciary;
+transition-duration: .5s;
+transform: translateX(100%);
+}
 
+
+.wrap_plat{
+    width: 100%;
+    &:hover + .check-box{
+        transform: translateX(0%);
+    }     
+}
+
+.fa-circle-check {    
+    margin: auto;
+    color: $font-color1;    
+    transition: transform 0.5s;    
+}
+.note{
+    max-height: 250px;
+    @include tablet{
+        max-height: 400px;
+    }
+}
