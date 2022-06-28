@@ -144,7 +144,8 @@ transform: translateX(100%);
 .fa-circle-check {    
     margin: auto;
     color: $font-color1;    
-    transition: transform 0.5s;    
+    transform: rotate(360deg);
+    transition-duration: 0.8ss;    
 }
 .note{
     max-height: 250px;
