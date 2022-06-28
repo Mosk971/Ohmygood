@@ -52,7 +52,7 @@
 .loader-color{
     display: grid;
     place-items: center;
-    background: linear-gradient(to left top, $primary, $secondary);
+    background: linear-gradient(to left top, $primary, $secondary, $terciary);
 	-webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 	background-size: 400% 400%;

@@ -68,23 +68,17 @@
 
 }
 
-.condiment__prix{
-    width: 100%;
-    display: flex; 
-    justify-content: space-between;   
-    padding-right: 10px;
-    white-space: nowrap;
-    overflow:hidden;
-    text-overflow: ellipsis;
-}
 
-.prix{
-    display: inline-block;
+
+.prix{    
     font-size: 1rem;
+    align-self: flex-end;
+    padding: 10px;
+    margin-left: auto;
     
 }
 .commander{
-    margin: auto;
+    margin: auto;    
     @include tablet{
         max-width: 300px;
     }    
@@ -98,16 +92,21 @@
 .plat{
     background-color: $font-color1;
     width: 90%;
-    max-width: 430px;
-    padding: 10px;
+    max-width: 430px;    
     display: flex;
     justify-content: space-between;
     border-radius: 15px; 
     line-height: 1.3rem;
-    overflow: hidden;    
+    overflow: hidden;
+    &:hover .check-box{
+        margin-right: 0;
+        
+
+    }         
 
     &__principal{        
-        font-size: 1.1rem;        
+        font-size: 1.1rem;
+                
     }
 
     &__condiment{ 
@@ -122,30 +121,28 @@
 
 
 .check-box{
-position: absolute;
-display: flex;
-right: 0;
-top: 0;
-height: 100%;
-width: 20%;
+width: 4rem;
 background-color: $terciary;
-transition-duration: .5s;
-transform: translateX(100%);
+margin-right: -3.5rem;
+transition: margin-right 0.4s;
+display: grid;
+place-items: center;
 }
 
 
 .wrap_plat{
     width: 100%;
-    &:hover + .check-box{
-        transform: translateX(0%);
-    }     
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
 }
 
 .fa-circle-check {    
     margin: auto;
     color: $font-color1;    
-    transform: rotate(360deg);
-    transition-duration: 0.8ss;    
+    transform: rotate(0deg);
+    transition-duration: 0.8s;    
 }
 .note{
     max-height: 250px;
