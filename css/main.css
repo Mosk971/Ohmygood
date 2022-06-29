@@ -607,6 +607,9 @@ a, a:visited, a:active {
 }
 .plat__principal {
   font-size: 1.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plat__condiment {
   font-weight: 300;
