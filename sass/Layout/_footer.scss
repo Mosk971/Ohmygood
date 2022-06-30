@@ -20,7 +20,7 @@
             flex-direction: row;
             justify-content: space-around;
             padding: 5px 90px 0 90px;
-            
+            align-items: center;
             
         }
     }
@@ -28,7 +28,10 @@
     &__title{
         font-family: $font-secondary ;        
         font-size: 1.1rem;
-        margin-bottom: 10px;                
+        margin-bottom: 10px;
+        @include tablet{
+            margin-bottom: 0 ;
+        }                
     }
 
     &__propose::before{         

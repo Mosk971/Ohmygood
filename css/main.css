@@ -53,7 +53,7 @@ a, a:visited, a:active {
 .headbtn {
   display: block;
   width: 58%;
-  margin: 20px auto;
+  margin: auto;
   max-width: 240px;
   font-weight: bold;
   color: #fff !important;
@@ -62,7 +62,6 @@ a, a:visited, a:active {
   border-radius: 30px;
   text-align: center;
   box-shadow: 2px 2px 6px #949191;
-  z-index: 4;
 }
 
 .fonc--padding {
@@ -137,67 +136,9 @@ a, a:visited, a:active {
   }
 }
 
-.loader {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #f6f6f6;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  -webkit-animation: delete 0.5s 4s forwards;
-          animation: delete 0.5s 4s forwards;
-}
-
-.loader-color {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(to left top, #9356DC, #FF79DA, #99E2D0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% 400%;
-  -webkit-animation: gradientshift 4s ease infinite;
-  animation: gradientshift 3s ease infinite;
-  height: 100vh;
-}
-
-@-webkit-keyframes delete {
-  to {
-    visibility: hidden;
-  }
-}
-
-@keyframes delete {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes gradientshift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes gradientshift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .heading {
   background-color: #f6f6f6;
   position: relative;
-  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .heading {
@@ -207,15 +148,28 @@ a, a:visited, a:active {
 .heading__location {
   display: flex;
   justify-content: center;
+  margin-left: 5rem;
   background-color: #eaeaea;
   padding: 15px;
-  position: relative;
-  z-index: -1;
   font-weight: 400;
   font-size: 1.2rem;
   gap: 10px;
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+.heading__location .loc {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.heading__location .loc::-moz-placeholder {
+  color: black;
+}
+.heading__location .loc:-ms-input-placeholder {
+  color: black;
+}
+.heading__location .loc::placeholder {
+  color: black;
+}
+@media screen and (min-width: 768px) {
   .heading__location {
     background: rgb(246, 246, 246);
     background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, rgb(232, 232, 232) 50%, rgba(246, 246, 246, 0) 100%);
@@ -236,21 +190,9 @@ a, a:visited, a:active {
   margin: 10px 40px;
   text-align: center;
 }
-.heading__btn {
-  display: block;
-  width: 58%;
+.btn--custom {
   margin-top: 20px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  padding: 15px 10px;
-  border-radius: 30px;
-  text-align: center;
-  box-shadow: 2px 2px 6px #949191;
-  max-width: 250px;
 }
 
 .fonctionnement {
@@ -472,12 +414,18 @@ a, a:visited, a:active {
     flex-direction: row;
     justify-content: space-around;
     padding: 5px 90px 0 90px;
+    align-items: center;
   }
 }
 .ftr__title {
   font-family: "Shrikhand", cursive;
   font-size: 1.1rem;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .ftr__title {
+    margin-bottom: 0;
+  }
 }
 .ftr__propose::before {
   font: var(--fa-font-solid);
@@ -579,6 +527,7 @@ a, a:visited, a:active {
 
 .commander {
   margin: auto;
+  margin-top: 50px;
 }
 @media screen and (min-width: 768px) {
   .commander {
@@ -605,6 +554,10 @@ a, a:visited, a:active {
 .plat:hover .check-box {
   margin-right: 0;
 }
+.plat:hover .fa-circle-check {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
 .plat__principal {
   font-size: 1.1rem;
   overflow: hidden;
@@ -622,7 +575,7 @@ a, a:visited, a:active {
 .check-box {
   width: 4rem;
   background-color: #99E2D0;
-  margin-right: -3.5rem;
+  margin-right: -3.6rem;
   transition: margin-right 0.4s;
   display: grid;
   place-items: center;
@@ -639,8 +592,6 @@ a, a:visited, a:active {
 .fa-circle-check {
   margin: auto;
   color: #fff;
-  transform: rotate(0deg);
-  transition-duration: 0.8s;
 }
 
 .note {
@@ -649,5 +600,46 @@ a, a:visited, a:active {
 @media screen and (min-width: 768px) {
   .note {
     max-height: 400px;
+  }
+}
+
+.groupe1 {
+  -webkit-animation: sliding 2s 1s;
+          animation: sliding 2s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.groupe2 {
+  -webkit-animation: sliding 2s 1.5s;
+          animation: sliding 2s 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.groupe3 {
+  -webkit-animation: sliding 2s 2s;
+          animation: sliding 2s 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+@-webkit-keyframes sliding {
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes sliding {
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }/*# sourceMappingURL=main.css.map */

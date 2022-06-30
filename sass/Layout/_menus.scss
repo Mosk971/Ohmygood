@@ -78,7 +78,9 @@
     
 }
 .commander{
-    margin: auto;    
+    margin: auto;
+    margin-top: 50px;
+        
     @include tablet{
         max-width: 300px;
     }    
@@ -97,10 +99,16 @@
     justify-content: space-between;
     border-radius: 15px; 
     line-height: 1.3rem;
-    overflow: hidden;    
-    &:hover .check-box{
-        margin-right: 0;
+    overflow: hidden;
         
+    &:hover {    
+        .check-box{
+            margin-right: 0;
+        }
+        .fa-circle-check {              
+            transform: rotate(360deg) ;
+            transition-duration: 0.5s;    
+        }
 
     }         
 
@@ -125,7 +133,7 @@
 .check-box{
 width: 4rem;
 background-color: $terciary;
-margin-right: -3.5rem;
+margin-right: -3.6rem;
 transition: margin-right 0.4s;
 display: grid;
 place-items: center;
@@ -142,9 +150,7 @@ place-items: center;
 
 .fa-circle-check {    
     margin: auto;
-    color: $font-color1;    
-    transform: rotate(0deg);
-    transition-duration: 0.8s;    
+    color: $font-color1;        
 }
 .note{
     max-height: 250px;
@@ -152,3 +158,30 @@ place-items: center;
         max-height: 400px;
     }
 }
+                                            // ANIMATION
+.groupe1{
+    animation: sliding 2s 1s;
+    animation-fill-mode:forwards;
+    transform: translateY(10%);
+    opacity:0;
+    
+  }
+  .groupe2{
+    animation: sliding 2s 1.5s;
+    animation-fill-mode:forwards;
+    transform: translateY(10%);
+    opacity:0;
+  }
+  .groupe3{
+    animation: sliding 2s 2s;
+    animation-fill-mode:forwards;
+    transform: translateY(10%);
+    opacity:0;
+  }
+
+  @keyframes sliding{    
+    to{
+      opacity: 1;
+      transform: translateY(0%)
+    }
+   } 

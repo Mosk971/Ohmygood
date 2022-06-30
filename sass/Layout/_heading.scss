@@ -2,34 +2,42 @@
 .heading{
     background-color: #f6f6f6;
     position: relative;
-    z-index: -1;
+
     @include tablet{
         background: linear-gradient(90deg, rgba(246,246,246,0) 0%, rgba(246,246,246,1) 50%, rgba(246,246,246,0) 100%);
-    }
+    }    
 
     &__location{
         display: flex;
         justify-content: center;
+        margin-left: 5rem;
         background-color: #eaeaea;
-        padding:15px ;
-        position: relative;
-        z-index: -1;
+        padding:15px ;                
         font-weight: 400;
         font-size: 1.2rem;
-        gap: 10px; 
-        
-        @include tablet{
+        gap: 10px;
+
+        .loc{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            &::placeholder{
+                color: black;
+            }
+        } 
+
             @include tablet{
                 background: rgb(246,246,246);
                 background: linear-gradient(90deg, rgba(246,246,246,0) 0%, rgba(232,232,232,1) 50%, rgba(246,246,246,0) 100%);
-            } 
+            }
+           
+            
         }
-    }
+    
 
     &__explore{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;       
         
         
         h1{ 
@@ -44,14 +52,16 @@
             text-align: center;             
         }  
     }
+    .loc{
 
-    &__btn{
-        @include headbtn;           
     }
-
-    
 }
-         
+ .btn--custom{
+    margin-top: 20px;
+    margin-bottom: 50px;
+ }   
+
+
 
     
 
