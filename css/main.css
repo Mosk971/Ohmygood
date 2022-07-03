@@ -166,6 +166,12 @@ a, a:visited, a:active {
 .heading__location .loc:-ms-input-placeholder {
   color: black;
 }
+.heading__location .loc::-webkit-input-placeholder {
+  color: black;
+}
+.heading__location .loc::-ms-input-placeholder {
+  color: black;
+}
 .heading__location .loc::placeholder {
   color: black;
 }
@@ -642,4 +648,4 @@ a, a:visited, a:active {
     opacity: 1;
     transform: translateY(0%);
   }
-}/*# sourceMappingURL=main.css.map */
+}
