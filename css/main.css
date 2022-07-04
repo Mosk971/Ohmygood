@@ -30,6 +30,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   max-width: 1400px;
+  min-width: 363px;
   margin: auto;
 }
 
@@ -130,11 +131,6 @@ a, a:visited, a:active {
 .return__btn .fa-arrow-left {
   font-size: 1.3rem;
 }
-@media screen and (min-width: 768px) {
-  .return__btn .fa-arrow-left {
-    display: none;
-  }
-}
 
 .loader {
   position: fixed;
@@ -205,9 +201,9 @@ a, a:visited, a:active {
 .heading__location {
   display: flex;
   justify-content: center;
-  margin-left: 5rem;
   background-color: #eaeaea;
   padding: 15px;
+  padding-left: 80px;
   font-weight: 400;
   font-size: 1.2rem;
   gap: 10px;
@@ -451,11 +447,6 @@ a, a:visited, a:active {
   background-color: #353535;
   color: #fff;
 }
-@media screen and (min-width: 768px) {
-  .ftr {
-    background: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.4766281513) 17%, rgba(53, 53, 53, 0.6923144258) 42%, rgba(53, 53, 53, 0.7175245098) 65%, rgba(53, 53, 53, 0.4234068627) 86%, rgba(53, 53, 53, 0) 100%);
-  }
-}
 .ftr a {
   color: inherit;
   font-weight: 400;
@@ -465,14 +456,6 @@ a, a:visited, a:active {
   display: flex;
   flex-direction: column;
   padding: 20px 0 20px 20px;
-}
-@media screen and (min-width: 768px) {
-  .ftr__wrap {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 5px 90px 0 90px;
-    align-items: center;
-  }
 }
 .ftr__title {
   font-family: "Shrikhand", cursive;

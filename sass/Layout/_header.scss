@@ -29,9 +29,7 @@
     
      .fa-arrow-left{
         font-size: 1.3rem; 
-        @include tablet{
-            display: none;
-        }
+        
      }        
 }
 
